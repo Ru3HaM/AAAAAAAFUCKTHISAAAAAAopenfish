@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './assets/styles/main.scss';
-import Menu from './assets/styles/components/Menu.jsx';
-import MainMap from './assets/styles/components/MainMap.jsx';
 
+import {BrowserRouter} from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'))
